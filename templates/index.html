@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <main class="index-main">
+        <div class="index-main-text">
+            <h1>HitList</h1>
+            <h2><span class="orange-text">Discover</span> your taste</h2>
+            <h2>in <span class="orange-text">music</span>.</h2>
+        </div>
+        <div class="index-main-btns">
+            <a href="{{ url_for('signin_page') }}">Sign-In</a>
+            <a href="{{ url_for('signup_page') }}">Sign-Up</a>
+        </div>
+        <img src="{{ url_for('static', filename='images/headphones.jpeg') }}" alt="headphones">
+    </main>
+{% endblock %}
